@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+.clipboardSaveDiv {
+	padding: 5px;
+	width: 95%;
+	height: 30px;
+	display: block;
+}
+
+.clipboardSave {
+	float: right;
+}
+
+.clipboardEditDiv {
+	padding: 5px;
+	width: 95%;
+	height: 70%;
+}
+
+.clipboardEdit {
+	height: 650px;
+	width: 100%;
+}
+
+.footer {
+	
+}
+
+.mozg {
+	height: 80px;
+	float: left;
+}
+
+.podpis {
+	color: rgb(128, 128, 128);
+	float: right;
+	padding-right: 70px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: italic;
+	font-size: 12px;
+}

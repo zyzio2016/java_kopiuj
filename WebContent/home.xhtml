@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Kopiuj</title>
+<link type="text/css" rel="stylesheet" href="#{resource['styles.css']}" />
+</head>
+<body>
+	<h:form id="saveForm">
+		<div class="clipboardSaveDiv">
+			<h:commandButton class="clipboardSave" value="Zapisz"
+				action="#{clipboardText.save}">
+				<f:ajax execute="saveForm" />
+			</h:commandButton>
+		</div>
+		<div class="clipboardEditDiv">
+			<h:inputTextarea class="clipboardEdit" id="clipText" row="10"
+				col="10" binding="#{clipboardText.text}" />
+		</div>
+	</h:form>
+	<div class="footer">
+		<h:graphicImage class="mozg" name="mozg.jpg" />
+		<h:outputText styleClass="podpis" value="Powered by Zyzio" />
+	</div>
+</body>
+</html>
